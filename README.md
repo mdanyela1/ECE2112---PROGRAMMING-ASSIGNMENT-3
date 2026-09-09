@@ -27,7 +27,9 @@ c. Column Filtering: Subsets cars_6_to_10 to display only ['Model', 'mpg', 'cyl'
 
 # Part B: Model Lookup
 Uses Boolean indexing on the Model column without hardcoded integer indices.
+
 a. Toyota Corolla: Filtered into variable toyota (all columns retained).
+
 b. Pontiac Firebird: Filtered into variable pontiac (retaining Model, mpg, hp, wt).
 
 # Part C: Multi-Model Subsetting
@@ -45,25 +47,35 @@ cars = pd.read_csv('cars.csv')
 
 # --- Part A ---
 print("Shape:", cars.shape)
+
 print("Columns:", cars.columns.tolist())
 
 # Rows 6 to 10 using iloc
+
 cars_6_to_10 = cars.iloc[5:10]
+
 cars_6_to_10_subset = cars_6_to_10[['Model', 'mpg', 'cyl', 'hp', 'gear']]
+
 display(cars_6_to_10_subset)
 
 # --- Part B ---
 toyota = cars[cars['Model'] == 'Toyota Corolla']
+
 pontiac = cars[cars['Model'] == 'Pontiac Firebird'][['Model', 'mpg', 'hp', 'wt']]
+
 display(toyota)
+
 display(pontiac)
 
 # --- Part C ---
 target_models = ['Datsun 710', 'Lotus Europa', 'Ferrari Dino']
+
 target_cols = ['Model', 'mpg', 'cyl', 'hp', 'gear']
 
 selected_cars = cars[cars['Model'].isin(target_models)][target_cols]
+
 display(selected_cars)
+
 print("Shape check:", selected_cars.shape)  # Expected: (3, 5)
 
 # Submission Checklist

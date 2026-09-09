@@ -43,7 +43,7 @@ b. Pontiac Firebird: Filtered into variable pontiac (retaining Model, mpg, hp, w
 - Result stored in selected_cars.
 - Includes verification step ensuring selected_cars.shape equals (3, 5).
 
-Quickstart Code snippet
+# Quickstart Code snippet
 Python
 import pandas as pd
 

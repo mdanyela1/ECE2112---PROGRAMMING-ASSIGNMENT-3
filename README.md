@@ -21,8 +21,11 @@ This repository contains the solution for Experiment 3: Python Data Analysis (Pa
 
 # Problem Breakdown & Code Structure
 Part A: Positional and Label-Based Slicing
+
 a. Dataset Properties: Displays cars.shape and cars.columns.
+
 b. Positional Slicing: Extracts rows 6 through 10 (1-based index corresponding to zero-based index 5:10) using .iloc into cars_6_to_10.
+
 c. Column Filtering: Subsets cars_6_to_10 to display only ['Model', 'mpg', 'cyl', 'hp', 'gear'] using explicit column labels.
 
 # Part B: Model Lookup
@@ -80,7 +83,11 @@ print("Shape check:", selected_cars.shape)  # Expected: (3, 5)
 
 # Submission Checklist
 [x] Executed .ipynb Jupyter Notebook.
+
 [x] Student metadata (Name, Section, Date) included at the top.
+
 [x] All outputs displayed in sequential executed cells.
+
 [x] Zero hardcoded row indexes used for Boolean operations.
+
 [x] Immutable source data (cars DataFrame untouched).

@@ -86,7 +86,6 @@ print("Shape check:", selected_cars.shape)  # Expected: (3, 5)
 # Submission Checklist
 [x] Executed .ipynb Jupyter Notebook.
 
-[x] Student metadata (Name, Section, Date) included at the top.
 
 [x] All outputs displayed in sequential executed cells.
 
